@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		80B56AB726C1FFF8000BDB97 /* ComparableForCustomTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B56AB626C1FFF8000BDB97 /* ComparableForCustomTypes.swift */; };
+		80B56AB926C20E0B000BDB97 /* WritingDataToDocumentsDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B56AB826C20E0B000BDB97 /* WritingDataToDocumentsDirectory.swift */; };
 		80EC242026C06C3900DF86C6 /* BucketListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EC241F26C06C3900DF86C6 /* BucketListApp.swift */; };
 		80EC242226C06C3900DF86C6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EC242126C06C3900DF86C6 /* ContentView.swift */; };
 		80EC242426C06C3A00DF86C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80EC242326C06C3A00DF86C6 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		80B56AB626C1FFF8000BDB97 /* ComparableForCustomTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparableForCustomTypes.swift; sourceTree = "<group>"; };
+		80B56AB826C20E0B000BDB97 /* WritingDataToDocumentsDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingDataToDocumentsDirectory.swift; sourceTree = "<group>"; };
 		80EC241C26C06C3900DF86C6 /* BucketList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BucketList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80EC241F26C06C3900DF86C6 /* BucketListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListApp.swift; sourceTree = "<group>"; };
 		80EC242126C06C3900DF86C6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				80B56AB626C1FFF8000BDB97 /* ComparableForCustomTypes.swift */,
+				80B56AB826C20E0B000BDB97 /* WritingDataToDocumentsDirectory.swift */,
 			);
 			path = Theory;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80B56AB926C20E0B000BDB97 /* WritingDataToDocumentsDirectory.swift in Sources */,
 				80EC242226C06C3900DF86C6 /* ContentView.swift in Sources */,
 				80EC242026C06C3900DF86C6 /* BucketListApp.swift in Sources */,
 				80B56AB726C1FFF8000BDB97 /* ComparableForCustomTypes.swift in Sources */,
