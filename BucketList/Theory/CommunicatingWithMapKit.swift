@@ -9,7 +9,8 @@ import SwiftUI
 
 struct CommunicatingWithMapKit: View {
     var body: some View {
-        MapViewExample()
+//        MapView()
+        Text("")
             .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
     }
 }
