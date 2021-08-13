@@ -11,10 +11,12 @@ import MapKit
 struct ContentView: View {
     @State private var centerCoordinate = CLLocationCoordinate2D()
     @State private var locations = [MKPointAnnotation]()
-    
+    @State private var selectedPlace: MKPointAnnotation?
+    @State private var showingDetails: Bool = false
+    @State private var showingEditScreen: Bool = false
     var body: some View {
         ZStack {
-            MapView(centerCoordinate: $centerCoordinate, annotations: locations)
+            MapView(centerCoordinate: $centerCoordinate, selectedPlace: $selectedPlace, showingPlaceDetails: $showingDetails, annotations: locations)
                 .ignoresSafeArea(.all)
             Circle()
                 .fill(Color.blue)
@@ -26,8 +28,11 @@ struct ContentView: View {
                     Spacer()
                     Button(action: {
                         let newLocation = MKPointAnnotation()
+                        newLocation.title = "Example Location"
                         newLocation.coordinate = self.centerCoordinate
                         self.locations.append(newLocation)
+                        self.selectedPlace = newLocation
+                        self.showingEditScreen = true
                     }, label: {
                         Image(systemName: "plus")
                             .padding()
@@ -38,6 +43,16 @@ struct ContentView: View {
                             .padding()
                     })
                 }
+            }
+        }
+        .alert(isPresented: $showingDetails) {
+            Alert(title: Text("\(selectedPlace?.title ?? "Unkown")"), message: Text("\(selectedPlace?.subtitle ?? "Missing Place information")"), primaryButton: .default(Text("OK")), secondaryButton: .default(Text("Edit")) {
+                self.showingEditScreen = true
+            })
+        }
+        .sheet(isPresented: $showingEditScreen) {
+            if self.selectedPlace != nil {
+                EditView(placemark: self.selectedPlace!)
             }
         }
     }
