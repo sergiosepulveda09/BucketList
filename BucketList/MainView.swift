@@ -6,18 +6,15 @@
 //
 
 import SwiftUI
-import MapKit
 
 struct MainView: View {
-    @State private var centerCoordinate = CLLocationCoordinate2D()
     @State private var showingDetails: Bool = false
     @State private var showingEditScreen: Bool = false
-    @State private var selectedPlace: MKPointAnnotation?
     @EnvironmentObject var vm: ViewModel
     
     var body: some View {
         ZStack {
-            MapView(centerCoordinate: $centerCoordinate, selectedPlace: $vm.selectedPlace , showingPlaceDetails: $showingDetails, annotations: vm.locations)
+            MapView(centerCoordinate: $vm.centerCoordinate, selectedPlace: $vm.selectedPlace , showingPlaceDetails: $showingDetails, annotations: vm.locations)
                 .ignoresSafeArea(.all)
             Circle()
                 .fill(Color.blue)
@@ -30,7 +27,7 @@ struct MainView: View {
                     Button(action: {
                         let newLocation = CodableMKPointAnnotation()
                         newLocation.title = "Example Location"
-                        newLocation.coordinate = self.centerCoordinate
+                        newLocation.coordinate = self.vm.centerCoordinate
                         self.vm.locations.append(newLocation)
                         self.vm.selectedPlace = newLocation
                         self.showingEditScreen = true

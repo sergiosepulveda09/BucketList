@@ -15,6 +15,7 @@ final class ViewModel: ObservableObject {
     @Published var isUnlocked: Bool = false
     @Published var biometricsRejected = false
     @Published var selectedPlace: MKPointAnnotation?
+    @Published var centerCoordinate = CLLocationCoordinate2D()
 
     init() {
         loadData()
