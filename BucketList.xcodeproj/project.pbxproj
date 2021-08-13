@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		801DF4D926C63BB300841DBB /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801DF4D826C63BB300841DBB /* Result.swift */; };
 		801DF4DB26C656A500841DBB /* MKPointAnnotation-Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801DF4DA26C656A500841DBB /* MKPointAnnotation-Codable.swift */; };
+		801DF4DD26C65E6100841DBB /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801DF4DC26C65E6100841DBB /* MainView.swift */; };
+		801DF4DF26C65F6200841DBB /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801DF4DE26C65F6200841DBB /* ViewModel.swift */; };
 		80B56AB726C1FFF8000BDB97 /* ComparableForCustomTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B56AB626C1FFF8000BDB97 /* ComparableForCustomTypes.swift */; };
 		80B56AB926C20E0B000BDB97 /* WritingDataToDocumentsDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B56AB826C20E0B000BDB97 /* WritingDataToDocumentsDirectory.swift */; };
 		80B56ABB26C33416000BDB97 /* SwitchingViewsStatesWithEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B56ABA26C33416000BDB97 /* SwitchingViewsStatesWithEnum.swift */; };
@@ -27,6 +29,8 @@
 /* Begin PBXFileReference section */
 		801DF4D826C63BB300841DBB /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		801DF4DA26C656A500841DBB /* MKPointAnnotation-Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKPointAnnotation-Codable.swift"; sourceTree = "<group>"; };
+		801DF4DC26C65E6100841DBB /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		801DF4DE26C65F6200841DBB /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		80B56AB626C1FFF8000BDB97 /* ComparableForCustomTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparableForCustomTypes.swift; sourceTree = "<group>"; };
 		80B56AB826C20E0B000BDB97 /* WritingDataToDocumentsDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingDataToDocumentsDirectory.swift; sourceTree = "<group>"; };
 		80B56ABA26C33416000BDB97 /* SwitchingViewsStatesWithEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchingViewsStatesWithEnum.swift; sourceTree = "<group>"; };
@@ -86,6 +90,8 @@
 				80EC241F26C06C3900DF86C6 /* BucketListApp.swift */,
 				80B56AC526C4990F000BDB97 /* MapView.swift */,
 				80EC242126C06C3900DF86C6 /* ContentView.swift */,
+				801DF4DC26C65E6100841DBB /* MainView.swift */,
+				801DF4DE26C65F6200841DBB /* ViewModel.swift */,
 				80B56AC726C5C9A9000BDB97 /* MKPointAnnotation-ObservableObject.swift */,
 				801DF4DA26C656A500841DBB /* MKPointAnnotation-Codable.swift */,
 				80B56AC926C5CA92000BDB97 /* EditView.swift */,
@@ -195,7 +201,9 @@
 				80B56AC826C5C9A9000BDB97 /* MKPointAnnotation-ObservableObject.swift in Sources */,
 				80B56ABD26C336B6000BDB97 /* IntegratingMapKit.swift in Sources */,
 				801DF4D926C63BB300841DBB /* Result.swift in Sources */,
+				801DF4DD26C65E6100841DBB /* MainView.swift in Sources */,
 				80EC242226C06C3900DF86C6 /* ContentView.swift in Sources */,
+				801DF4DF26C65F6200841DBB /* ViewModel.swift in Sources */,
 				80EC242026C06C3900DF86C6 /* BucketListApp.swift in Sources */,
 				80B56AC626C4990F000BDB97 /* MapView.swift in Sources */,
 				80B56AB726C1FFF8000BDB97 /* ComparableForCustomTypes.swift in Sources */,
