@@ -4,9 +4,7 @@
 //
 //  Created by Sergio Sepulveda on 2021-08-08.
 //
-import LocalAuthentication
 import SwiftUI
-import MapKit
 
 struct ContentView: View {
     
