@@ -12,7 +12,8 @@ struct ContentView: View {
     
     var body: some View {
         if vm.isUnlocked {
-            MainView(vm: self.vm)
+            MainView()
+                .environmentObject(vm)
         } else {
             //button here
             Button("Unlock places") {
@@ -22,6 +23,18 @@ struct ContentView: View {
             .background(Color.blue)
             .foregroundColor(.white)
             .clipShape(Capsule())
+            .alert(isPresented: $vm.biometricsRejected) {
+                Alert(title: Text("Can't use biometrics"), message: Text("Please allow us to use them"), dismissButton: .default(Text("Go to settings"), action: {
+                    guard let settingsURL = URL(string: UIApplication.openSettingsURLString) else {
+                        return
+                    }
+                    if UIApplication.shared.canOpenURL(settingsURL) {
+                        UIApplication.shared.open(settingsURL) { (success) in
+                            print("Settings opened: \(success)")
+                        }
+                    }
+                }))
+            }
         }
     }
 

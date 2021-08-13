@@ -11,9 +11,11 @@ import MapKit
 
 final class ViewModel: ObservableObject {
     
-    @Published var selectedPlace: MKPointAnnotation?
     @Published var locations = [CodableMKPointAnnotation]()
     @Published var isUnlocked: Bool = false
+    @Published var biometricsRejected = false
+    @Published var selectedPlace: MKPointAnnotation?
+
     init() {
         loadData()
     }
@@ -60,7 +62,8 @@ final class ViewModel: ObservableObject {
                 }
             }
         } else {
-            
+            biometricsRejected = true
+            print("\(error?.localizedDescription)")
         }
     }
 //

@@ -12,24 +12,12 @@ struct MainView: View {
     @State private var centerCoordinate = CLLocationCoordinate2D()
     @State private var showingDetails: Bool = false
     @State private var showingEditScreen: Bool = false
-
-    
-    var vm: ViewModel
+    @State private var selectedPlace: MKPointAnnotation?
+    @EnvironmentObject var vm: ViewModel
     
     var body: some View {
-        
-        let selected =  Binding<MKPointAnnotation?>(
-            get: {
-                self.vm.selectedPlace
-                
-            }, set: {
-                self.vm.selectedPlace = $0
-                print("New value is \(String(describing: self.vm.selectedPlace))")
-            }
-            )
-
-        return ZStack {
-            MapView(centerCoordinate: $centerCoordinate, selectedPlace: selected, showingPlaceDetails: $showingDetails, annotations: vm.locations)
+        ZStack {
+            MapView(centerCoordinate: $centerCoordinate, selectedPlace: $vm.selectedPlace , showingPlaceDetails: $showingDetails, annotations: vm.locations)
                 .ignoresSafeArea(.all)
             Circle()
                 .fill(Color.blue)
@@ -68,6 +56,7 @@ struct MainView: View {
                 EditView(placemark: self.vm.selectedPlace!)
             }
         }
+        .onAppear(perform: self.vm.loadData)
     }
     
     
@@ -77,6 +66,7 @@ struct MainView: View {
 
 struct MainViewChallenge2_Previews: PreviewProvider {
     static var previews: some View {
-        MainView(vm: ViewModel())
+        MainView()
+            .environmentObject(ViewModel())
     }
 }
