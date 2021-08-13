@@ -46,7 +46,6 @@ struct MapView: UIViewRepresentable {
             } else {
                 annotationView?.annotation = annotation
             }
-            print("Added")
             return annotationView
         }
         

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		801DF4D926C63BB300841DBB /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801DF4D826C63BB300841DBB /* Result.swift */; };
 		80B56AB726C1FFF8000BDB97 /* ComparableForCustomTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B56AB626C1FFF8000BDB97 /* ComparableForCustomTypes.swift */; };
 		80B56AB926C20E0B000BDB97 /* WritingDataToDocumentsDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B56AB826C20E0B000BDB97 /* WritingDataToDocumentsDirectory.swift */; };
 		80B56ABB26C33416000BDB97 /* SwitchingViewsStatesWithEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B56ABA26C33416000BDB97 /* SwitchingViewsStatesWithEnum.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		801DF4D826C63BB300841DBB /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		80B56AB626C1FFF8000BDB97 /* ComparableForCustomTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparableForCustomTypes.swift; sourceTree = "<group>"; };
 		80B56AB826C20E0B000BDB97 /* WritingDataToDocumentsDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingDataToDocumentsDirectory.swift; sourceTree = "<group>"; };
 		80B56ABA26C33416000BDB97 /* SwitchingViewsStatesWithEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchingViewsStatesWithEnum.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				80EC242126C06C3900DF86C6 /* ContentView.swift */,
 				80B56AC726C5C9A9000BDB97 /* MKPointAnnotation-ObservableObject.swift */,
 				80B56AC926C5CA92000BDB97 /* EditView.swift */,
+				801DF4D826C63BB300841DBB /* Result.swift */,
 				80EC242326C06C3A00DF86C6 /* Assets.xcassets */,
 				80EC242826C06C3A00DF86C6 /* Info.plist */,
 				80EC242526C06C3A00DF86C6 /* Preview Content */,
@@ -187,6 +190,7 @@
 				80B56AB926C20E0B000BDB97 /* WritingDataToDocumentsDirectory.swift in Sources */,
 				80B56AC826C5C9A9000BDB97 /* MKPointAnnotation-ObservableObject.swift in Sources */,
 				80B56ABD26C336B6000BDB97 /* IntegratingMapKit.swift in Sources */,
+				801DF4D926C63BB300841DBB /* Result.swift in Sources */,
 				80EC242226C06C3900DF86C6 /* ContentView.swift in Sources */,
 				80EC242026C06C3900DF86C6 /* BucketListApp.swift in Sources */,
 				80B56AC626C4990F000BDB97 /* MapView.swift in Sources */,
